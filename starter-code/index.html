@@ -2,8 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -11,7 +14,6 @@
       href="./assets/favicon-32x32.png"
     />
     <link rel="stylesheet" href="/starter-code/css/style.css" />
-
     <title>Frontend Mentor | Skilled e-learning landing page</title>
   </head>
   <body>
@@ -21,12 +23,16 @@
           <img src="./assets/logo-dark.svg" alt="logo-dark" class="nav__logo" />
           <a href="#" class="btn nav__btn">Get Started</a>
         </nav>
-        <div class="hero">
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="hero__container">
           <div class="hero__text">
             <h1>Maximize skill, minimize budget</h1>
             <p>
-              Our modern courses across a range of in-demand skills will give
-              you the knowledge you need to live the life you want.
+              Our modern courses across a range of in-demand skills will give you
+              the knowledge you need to live the life you want.
             </p>
             <a href="#" class="btn hero__btn">Get Started</a>
           </div>
@@ -35,62 +41,68 @@
             alt="work and coffee"
             class="hero__img"
           />
-        </div>
       </div>
-    </header>
-
-    <main>
-      <div class="grid__container container">
-        <div class="card__sub">
-          <h2>Check out our most popular courses!</h2>
-        </div>
-        <div class="card">
-          <h3>Animation</h3>
-          <p>
-            Learn the latest animation techniques to create stunning motion
-            design and captivate your audience.
-          </p>
-          <a href="#">Get Started</a>
-        </div>
-        <div class="card">
-          <h3>Design</h3>
-          <p>
-            Create beautiful, usable interfaces to help shape the future of how
-            the web looks.
-          </p>
-          <a href="#">Get Started</a>
-        </div>
-        <div class="card">
-          <h3>Photography</h3>
-          <p>
-            Explore critical fundamentals like lighting, composition, and focus
-            to capture exceptional photos.
-          </p>
-          <a href="#">Get Started</a>
-        </div>
-        <div class="card">
-          <h3>Crypto</h3>
-          <p>
-            All you need to know to get started investing in crypto. Go from
-            beginner to advanced with this 54 hour course.
-          </p>
-          <a href="#">Get Started</a>
-        </div>
-        <div class="card">
-          <h3>Business</h3>
-          <p>
-            A step-by-step playbook to help you start, scale, and sustain your
-            business without outside investment.
-          </p>
-          <a href="#">Get Started</a>
-        </div>
+      </section>
+      <div class="container">
+        <section class="card__container">
+          <div class="card__sub">
+            <h2>Check out our most popular courses!</h2>
+          </div>
+          <div class="card">
+            <img src="./assets/icon-animation.svg" alt="icon" />
+            <h3>Animation</h3>
+            <p>
+              Learn the latest animation techniques to create stunning motion
+              design and captivate your audience.
+            </p>
+            <a href="#">Get Started</a>
+          </div>
+          <div class="card">
+            <img src="./assets/icon-design.svg" alt="icon" />
+            <h3>Design</h3>
+            <p>
+              Create beautiful, usable interfaces to help shape the future of how
+              the web looks.
+            </p>
+            <a href="#">Get Started</a>
+          </div>
+          <div class="card">
+            <img src="./assets/icon-photography.svg" alt="icon" />
+            <h3>Photography</h3>
+            <p>
+              Explore critical fundamentals like lighting, composition, and focus
+              to capture exceptional photos.
+            </p>
+            <a href="#">Get Started</a>
+          </div>
+          <div class="card">
+            <img src="./assets/icon-crypto.svg" alt="icon" />
+            <h3>Crypto</h3>
+            <p>
+              All you need to know to get started investing in crypto. Go from
+              beginner to advanced with this 54 hour course.
+            </p>
+            <a href="#">Get Started</a>
+          </div>
+          <div class="card">
+            <img src="./assets/icon-business.svg" alt="icon" />
+            <h3>Business</h3>
+            <p>
+              A step-by-step playbook to help you start, scale, and sustain your
+              business without outside investment.
+            </p>
+            <a href="#">Get Started</a>
+          </div>
+        </section>
       </div>
     </main>
 
     <footer>
       <div class="container">
-        <img src="./assets/logo-light.svg" alt="logo-dark" />
-        <a href="#" class="btn footer__btn">Get Started</a>
+        <div class="footer__flex">
+          <img src="./assets/logo-light.svg" alt="logo-dark" />
+          <a href="#" class="btn footer__btn">Get Started</a>
+        </div>
       </div>
     </footer>
   </body>
