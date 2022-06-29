@@ -59,16 +59,18 @@ header {
 }
 /* ***************************************** SECTION HERO */
 .hero__container {
-  display: flex;
-  padding: 100px 0 0;
+  padding-top: clamp(2.81rem, calc(1.6rem + 5.16vw), 6.25rem);
+  height: 800px;
 }
-
+.hero__text {
+  width: 460px;
+}
 .hero__text h1 {
   color: var(--secondary);
   font-size: var(--fs-900);
   font-weight: var(--fw-800);
   line-height: 71px;
-  margin-bottom: 29px;
+  margin-bottom: clamp(1.56rem, calc(1.47rem + 0.38vw), 1.81rem);
 }
 p {
   color: var(--neutral-2);
@@ -83,7 +85,13 @@ p {
   background: var(--gradient-1);
   margin-bottom: 110px;
 }
+.hero__container div:last-child {
+  position: relative;
+}
 .hero__img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
   width: 100%;
 }
 
@@ -116,7 +124,6 @@ p {
   position: absolute;
   top: -27px;
 }
-
 .card h3 {
   color: var(--secondary);
   font-size: var(--fs-600);
@@ -132,7 +139,6 @@ p {
 .card__container .card:nth-child(4) > p {
   margin-bottom: 52px;
 }
-
 .card a {
   text-decoration: none;
   color: var(--neutral-3);
@@ -157,3 +163,5 @@ footer {
 }
 
 /* *****************************************RESPONSIVE */
+@media screen and (max-width: 1439px) {
+} ;
