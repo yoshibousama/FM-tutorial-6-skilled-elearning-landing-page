@@ -31,8 +31,8 @@ body {
   background-color: var(--primary);
   background-image: url("../assets/image-hero-desktop.webp");
   background-repeat: no-repeat;
-  background-position: right -133px top -155px;
-  background-size: contain;
+  background-position: right -120px top -132px;
+  max-width: 120rem;
 }
 .container {
   width: min(90%, 1100px);
@@ -155,19 +155,34 @@ footer {
 }
 
 /* *****************************************RESPONSIVE */
-@media screen and (max-width: 2560px) {
+@media screen and (max-width: 110rem) {
   body {
-    background-position: right -133px top -155px;
-    background-size: 50%;
+    background-position: right -270px top -108px;
+    background-size: 63%;
   }
 }
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 82.5rem) {
   body {
-    background-position: right -133px top -155px;
-    background-size: 50%;
+    background-position: right -297px top -45px;
+    background-size: 72%;
   }
 }
-@media screen and (max-width: 689px) {
+@media screen and (max-width: 64rem) {
+  body {
+    background-position: right -187px top 64px;
+    background-size: 70%;
+  }
+}
+
+@media screen and (max-width: 48rem) {
+  body {
+    background-image: url("../assets/image-hero-tablet.webp");
+    background-position: right -169px top 185px;
+    background-size: 80%;
+  }
+  .hero__text {
+    width: 300px;
+  }
   .hero__text h1 {
     line-height: 50px;
     padding-bottom: 25px;
@@ -177,7 +192,18 @@ footer {
     padding-bottom: 39px;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 36.25rem) {
+  body {
+    background-image: url("../assets/image-hero-mobile.webp");
+    background-position: center 515px;
+  }
+  .hero__container {
+    margin: 38px 0 500px;
+  }
+  .hero__text {
+    width: 100%;
+    text-align: center;
+  }
   .hero__text h1 {
     line-height: 50px;
     padding-bottom: 25px;
@@ -185,4 +211,8 @@ footer {
   .hero__text p {
     padding-bottom: 39px;
   }
-} ;
+  .card,
+  .card__sub {
+    padding: 32px 28px;
+  }
+}
