@@ -29,10 +29,6 @@
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
   background-color: var(--primary);
-  background-image: url("../assets/image-hero-desktop.webp");
-  background-repeat: no-repeat;
-  background-position: right -120px top -132px;
-  max-width: 120rem;
 }
 .container {
   width: min(90%, 1100px);
@@ -63,6 +59,7 @@ header {
 /* ***************************************** SECTION HERO */
 .hero__container {
   margin: 185px 0 200px;
+  position: relative;
 }
 .hero__text {
   width: 400px;
@@ -85,6 +82,15 @@ p {
 }
 .hero__btn {
   background: var(--gradient-1);
+}
+.hero__img {
+  position: absolute;
+  background-image: url("../assets/image-hero-desktop.webp");
+  background-repeat: no-repeat;
+  width: 1046px;
+  height: 938px;
+  top: -421px;
+  right: -500px;
 }
 
 /* *****************************************SECTION CARD */
@@ -155,31 +161,7 @@ footer {
 }
 
 /* *****************************************RESPONSIVE */
-@media screen and (max-width: 110rem) {
-  body {
-    background-position: right -270px top -108px;
-    background-size: 63%;
-  }
-}
-@media screen and (max-width: 82.5rem) {
-  body {
-    background-position: right -297px top -45px;
-    background-size: 72%;
-  }
-}
-@media screen and (max-width: 64rem) {
-  body {
-    background-position: right -187px top 64px;
-    background-size: 70%;
-  }
-}
-
-@media screen and (max-width: 48rem) {
-  body {
-    background-image: url("../assets/image-hero-tablet.webp");
-    background-position: right -169px top 185px;
-    background-size: 80%;
-  }
+@media screen and (max-width: 90rem) {
   .hero__text {
     width: 300px;
   }
@@ -191,14 +173,21 @@ footer {
   .hero__text p {
     padding-bottom: 39px;
   }
-}
-@media screen and (max-width: 36.25rem) {
-  body {
-    background-image: url("../assets/image-hero-mobile.webp");
-    background-position: center 515px;
+  .hero__img {
+    width: 695px;
+    height: 723px;
+    padding-top: 0;
+    position: absolute;
+    top: -320px;
+    right: -340px;
+    background-image: url("../assets/image-hero-tablet.webp");
   }
+}
+
+@media screen and (max-width: 48rem) {
   .hero__container {
-    margin: 38px 0 500px;
+    position: static;
+    margin: 0;
   }
   .hero__text {
     width: 100%;
@@ -214,5 +203,12 @@ footer {
   .card,
   .card__sub {
     padding: 32px 28px;
+  }
+  .hero__img {
+    background-image: url("../assets/image-hero-mobile.webp");
+    position: static;
+    background-position: center;
+    width: 100%;
+    height: 409px;
   }
 }
