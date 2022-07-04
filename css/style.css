@@ -29,6 +29,7 @@
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
   background-color: var(--primary);
+  overflow-x: hidden;
 }
 .container {
   width: min(90%, 1100px);
